@@ -1,0 +1,51 @@
+.sort-selection {
+  cursor: pointer;
+  text-decoration: none;
+  &.active {
+    cursor: default;
+  }
+  &:focus,
+  &:active,
+  &:focus-within,
+  &:active:focus {
+    box-shadow: none !important;
+  }
+}
+
+.start-btn {
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.footer-bar {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 90px;
+  padding: 0 16px;
+
+  .left, .right {
+    width: 30%;
+    min-width: 180px;
+  }
+  .center {
+    width: 40%;
+    max-width: 722px;
+  }
+}
+
+button {
+    &:focus {
+        outline: none !important;
+    }
+}
